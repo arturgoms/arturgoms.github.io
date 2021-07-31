@@ -11,9 +11,7 @@ I have high qualifications on Python with 4+ years of experience. You can check 
 Git and Gerrit integration. Yocto /Bitbake. Jira issue tracker.
 Experience at embedded systems like ARM programming, ESP32/8266, i2C, serial, SPI protocols and linux environment.
 
-You can [report](http://github.com/arturgoms/arturgoms.github.io/issues/new) if there is an broken link(s) or somethings else.
-
-**may u needs ✨**
+You can [report](http://github.com/arturgoms/arturgoms.github.io/issues/new) if there is a broken link(s) or something else.
 
 - [{{ site.author.email }}](mailto:{{ site.author.email }})
 - [github.com/{{ site.author.github }}](https://github.com/{{ site.author.github }})

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to take smart notes"
-date:   2020-07-29 09:29:20 +0700
+date:   2021-07-29 09:29:20 +0700
 categories: post notes
 ---
 # O Método Zettelkasten 

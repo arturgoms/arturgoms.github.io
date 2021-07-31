@@ -4,7 +4,7 @@ description: >- # site description
   My project, blog, news stuff.
 lang: en-US # default lang
 timezone: America/Sao-paulo # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+image: assets/img/avatar.jpg # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/arturgoms/arturgoms.github.io # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
@@ -68,7 +68,7 @@ jekyll_compose:
 
 # Homepage limits
 number_of_posts: 5
-number_of_projects: 5
+number_of_projects: 3
 
 # Build settings
 # theme: klise

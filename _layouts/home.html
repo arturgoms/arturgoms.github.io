@@ -3,17 +3,6 @@ layout: default
 home: true
 ---
 
-
-<h3 class="posts-item-note" aria-label="Recent Projects">Recent Projects</h3>
-{%- for project in site.projects limit: site.number_of_projects -%}
-<article class="post-item">
-  <span class="post-item-date">{{ project.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
-    <a href="{{ project.url }}">{{ project.title | escape }}</a>
-  </h4>
-</article>
-{%- endfor -%}
-
 <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
 {%- for post in site.posts limit: site.number_of_posts -%}
 <article class="post-item">
@@ -23,3 +12,39 @@ home: true
   </h4>
 </article>
 {%- endfor -%}
+
+<h3 class="posts-item-note" aria-label="Recent Projects">Recent Projects</h3>
+<div class="blog-card-section">
+{%- for project in site.projects limit: site.number_of_projects -%}
+
+  <a href="{{ project.url }}">
+  <div class="blog-card">
+    <div class="blog-card-container">
+      <div class="blog-card-link">
+          <img
+            src="/assets/projects/1.png"
+            alt="blog card image"
+            class="blog-card-link-img"
+            />
+      </div>
+
+      <div class="blog-card-bottom">
+        <div class="blog-card-title">
+          <span class="blog-card-text">{{ project.date | date: "%b %d, %Y" }}</span><br>
+          <span class="blog-card-title-text">
+            {{ project.title | escape }}
+          </span>
+        </div>
+
+        <div class="blog-card-text">
+          <p>
+            <a href="{{ project.git }}"><button type="button" class="btn btn-primary" >Github</button></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </a>
+{%- endfor -%}
+</div>

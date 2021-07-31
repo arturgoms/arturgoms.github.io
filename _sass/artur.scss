@@ -1,0 +1,85 @@
+.blog-card-section {
+  display: flex;
+
+  .blog-card {
+    //@apply delay-300 p-2 ml-8 w-full;
+    padding: 0.2rem;
+    //width: 25%;
+    box-shadow: 0 .25rem .5rem 0 rgba(0, 0, 0, 0.2);
+    //min-width: 20rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    &:first-child{
+      margin-left: 0 !important;
+    }
+
+    .blog-card-container {
+      padding: 1rem 1rem 0.25rem 0.25rem;
+      text-align: center;
+      .blog-card-link {
+        overflow: hidden;
+        background-color: white;
+        border-radius: 10px;
+        .blog-card-link-img {
+          width: 80%;
+        }
+      }
+      .btn {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: 1px solid;
+          border-radius: 6px;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          padding: 5px 16px;
+          position: relative;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+      }
+      .btn-primary {
+          background-color: var(--color-btn-primary-bg);
+          border-color: var(--color-btn-primary-border);
+          box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
+          color: var(--color-btn-primary-text);
+      }
+      .blog-card-bottom {
+        //@apply pt-1 pb-1;
+        padding-bottom: 0.25rem;
+        padding-top: 0.25rem;
+        .blog-card-title {
+          //@apply pt-2 pb-2;
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+
+          .blog-card-title-text {
+            //@apply text-2xl font-bold;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+        .blog-card-text {
+          //@apply mb-4;
+          margin-bottom: 1rem;
+
+          .blog-card-readmore {
+            // @apply flex justify-end;
+            display: flex;
+            justify-content: end;
+            margin-top: -1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
