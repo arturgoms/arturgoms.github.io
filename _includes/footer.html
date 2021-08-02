@@ -5,10 +5,13 @@
 </footer>
 <script src="/assets/js/main.js" defer="defer"></script>
 
-<script src="/assets/js/galite.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FME4CEFKCN"></script>
 <script>
-  var galite = galite || {};
-  galite.UA = "{{ site.google_analytics }}";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FME4CEFKCN');
 </script>
 
 {%- if page.url == '/archive/' -%}
